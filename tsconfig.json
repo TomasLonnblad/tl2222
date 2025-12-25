@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": false,
+    "declaration": true,
+    "declarationDir": "dist",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "module": "ESNext",
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "plugins": [
+    {
+      "name": "next"
+    }
+  ],
+  "paths": {
+    "@/*": [
+      "./src/*"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    ".next/types/**/*.ts"
+  ], // Include all source files
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.tsx",
+    ".next"
+  ]
+}
